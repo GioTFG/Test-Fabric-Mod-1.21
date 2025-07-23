@@ -39,6 +39,9 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.GINO_BLOCK);
                         entries.add(ModBlocks.FIRE_GINO_BLOCK);
+
+                        entries.add(ModBlocks.GINO_ORE);
+                        entries.add(ModBlocks.GINO_DEEPSLATE_ORE);
                     })
                     .build()
     );

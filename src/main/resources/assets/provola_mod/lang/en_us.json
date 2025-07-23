@@ -4,6 +4,8 @@
 
   "block.provola_mod.gino_block": "Block of Gino",
   "block.provola_mod.fire_gino_block": "Block of Fire Gino",
+  "block.provola_mod.gino_ore": "Gino Ore",
+  "block.provola_mod.gino_deepslate_ore": "Gino Deepslate Ore",
 
   "itemgroup.provola_mod.gino_items": "Gino Items",
   "itemgroup.provola_mod.gino_blocks": "Gino Blocks"
