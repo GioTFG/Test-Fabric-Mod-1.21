@@ -1,4 +1,7 @@
 {
   "item.provola_mod.gino": "Gino",
-  "item.provola_mod.gino_focoso": "Gino Focoso"
+  "item.provola_mod.gino_focoso": "Fire Gino",
+
+  "block.provola_mod.gino_block": "Block of Gino",
+  "block.provola_mod.fire_gino_block": "Block of Fire Gino"
 }
