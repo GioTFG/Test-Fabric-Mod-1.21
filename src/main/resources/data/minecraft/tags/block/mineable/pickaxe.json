@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "provola_mod:gino_block",
+    "provola_mod:fire_gino_block",
+    "provola_mod:gino_ore",
+    "provola_mod:gino_deepslate_ore"
+  ]
+}
