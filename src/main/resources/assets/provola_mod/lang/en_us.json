@@ -3,5 +3,8 @@
   "item.provola_mod.gino_focoso": "Fire Gino",
 
   "block.provola_mod.gino_block": "Block of Gino",
-  "block.provola_mod.fire_gino_block": "Block of Fire Gino"
+  "block.provola_mod.fire_gino_block": "Block of Fire Gino",
+
+  "itemgroup.provola_mod.gino_items": "Gino Items",
+  "itemgroup.provola_mod.gino_blocks": "Gino Blocks"
 }

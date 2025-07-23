@@ -3,6 +3,7 @@ package net.giotfg.provolamod;
 import net.fabricmc.api.ModInitializer;
 
 import net.giotfg.provolamod.block.ModBlocks;
+import net.giotfg.provolamod.item.ModItemGroups;
 import net.giotfg.provolamod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,6 +14,7 @@ public class ProvolaMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 	}
