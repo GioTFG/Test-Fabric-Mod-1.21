@@ -28,6 +28,7 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.GINO);
                         entries.add(ModItems.GINO_FOCOSO);
+                        entries.add(ModItems.MAGIC_GINO);
                     })
                     .build()
     );

@@ -2,6 +2,7 @@ package net.giotfg.provolamod.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.giotfg.provolamod.ProvolaMod;
+import net.giotfg.provolamod.item.custom.MagicGinoItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
@@ -12,6 +13,7 @@ public class ModItems {
 //    Si registrano tutti gli oggetti, salvati come costanti.
     public static final Item GINO = registerItem("gino", new Item(new Item.Settings()));
     public static final Item GINO_FOCOSO = registerItem("gino_focoso", new Item(new Item.Settings()));
+    public static final Item MAGIC_GINO = registerItem("magic_gino", new MagicGinoItem(new Item.Settings().maxDamage(32)));
 
 //    Metodo helepr per registrare il singolo oggetto. 'name' sarà l'id, quindi tutto minuscolo e solo underscore
     private static Item registerItem(String name, Item item) {
