@@ -3,6 +3,7 @@ package net.giotfg.provolamod.item;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.giotfg.provolamod.ProvolaMod;
 import net.giotfg.provolamod.item.custom.MagicGinoItem;
+import net.giotfg.provolamod.item.custom.ModFoodComponents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
@@ -14,6 +15,9 @@ public class ModItems {
     public static final Item GINO = registerItem("gino", new Item(new Item.Settings()));
     public static final Item GINO_FOCOSO = registerItem("gino_focoso", new Item(new Item.Settings()));
     public static final Item MAGIC_GINO = registerItem("magic_gino", new MagicGinoItem(new Item.Settings().maxDamage(32)));
+
+//    Per aggiungere un oggetto cibo, bisogna passare nelle settings un food component, creato nella classe ModFoodComponents
+    public static final Item APPLE_GINO = registerItem("apple_gino", new Item(new Item.Settings().food(ModFoodComponents.APPLE_GINO)));
 
 //    Metodo helepr per registrare il singolo oggetto. 'name' sarà l'id, quindi tutto minuscolo e solo underscore
     private static Item registerItem(String name, Item item) {

@@ -29,6 +29,7 @@ public class ModItemGroups {
                         entries.add(ModItems.GINO);
                         entries.add(ModItems.GINO_FOCOSO);
                         entries.add(ModItems.MAGIC_GINO);
+                        entries.add(ModItems.APPLE_GINO);
                     })
                     .build()
     );
