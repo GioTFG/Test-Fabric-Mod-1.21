@@ -2,6 +2,7 @@ package net.giotfg.provolamod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.giotfg.provolamod.block.ModBlocks;
 import net.giotfg.provolamod.item.ModItemGroups;
 import net.giotfg.provolamod.item.ModItems;
@@ -17,5 +18,8 @@ public class ProvolaMod implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		FuelRegistry.INSTANCE.add(ModItems.GINO_FOCOSO, 2000);
+		FuelRegistry.INSTANCE.add(ModBlocks.FIRE_GINO_BLOCK, 20000);
 	}
 }
