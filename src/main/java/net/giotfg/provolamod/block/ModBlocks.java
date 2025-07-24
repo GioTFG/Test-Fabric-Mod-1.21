@@ -2,6 +2,7 @@ package net.giotfg.provolamod.block;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.giotfg.provolamod.ProvolaMod;
+import net.giotfg.provolamod.block.custom.MagicGinoBlock;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.ExperienceDroppingBlock;
@@ -64,6 +65,13 @@ public class ModBlocks {
                             .strength(4f)
                             .requiresTool()
                             .sounds(BlockSoundGroup.DEEPSLATE)
+            )
+    );
+    public static final Block MAGIC_GINO_BLOCK = registerBlock(
+            "magic_gino_block",
+            new MagicGinoBlock(AbstractBlock.Settings.create()
+                    .strength(1f)
+                    .requiresTool()
             )
     );
 

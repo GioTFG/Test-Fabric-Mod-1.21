@@ -43,6 +43,8 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.GINO_ORE);
                         entries.add(ModBlocks.GINO_DEEPSLATE_ORE);
+
+                        entries.add(ModBlocks.MAGIC_GINO_BLOCK);
                     })
                     .build()
     );
