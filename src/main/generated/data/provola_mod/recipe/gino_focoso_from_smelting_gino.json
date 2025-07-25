@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.5,
+  "group": "gino_focoso",
+  "ingredient": {
+    "item": "provola_mod:gino"
+  },
+  "result": {
+    "id": "provola_mod:gino_focoso"
+  }
+}

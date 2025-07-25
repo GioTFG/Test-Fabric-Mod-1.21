@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "provola_mod:fire_gino_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "provola_mod:gino_focoso"
+  }
+}

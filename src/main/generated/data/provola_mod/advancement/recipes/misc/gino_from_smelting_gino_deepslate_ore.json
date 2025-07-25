@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_gino_deepslate_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "provola_mod:gino_deepslate_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:gino_from_smelting_gino_deepslate_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_gino_deepslate_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:gino_from_smelting_gino_deepslate_ore"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "provola_mod:gino"
+    },
+    {
+      "item": "minecraft:apple"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "provola_mod:apple_gino"
+  }
+}
