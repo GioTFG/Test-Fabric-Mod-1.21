@@ -11,5 +11,11 @@
   "block.provola_mod.magic_gino_block": "Magic Gino Block",
 
   "itemgroup.provola_mod.gino_items": "Gino Items",
-  "itemgroup.provola_mod.gino_blocks": "Gino Blocks"
+  "itemgroup.provola_mod.gino_blocks": "Gino Blocks",
+
+  "tooltip.provola_mod.magic_gino_block": "Give me §9diamonds§r and I'll give you §knetherite§r!",
+
+  "tooltip.provola_mod.magic_gino.shift_down": "I transform some blocks into others ☻.",
+  "tooltip.provola_mod.magic_gino": "I am §4magic§r!",
+  "tooltip.provola_mod.apple_gino": "Sometimes I'll give you extra life."
 }
