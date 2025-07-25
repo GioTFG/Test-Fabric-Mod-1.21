@@ -1,6 +1,5 @@
 package net.giotfg.provolamod.block.custom;
 
-import net.giotfg.provolamod.item.ModItems;
 import net.giotfg.provolamod.util.ModTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
