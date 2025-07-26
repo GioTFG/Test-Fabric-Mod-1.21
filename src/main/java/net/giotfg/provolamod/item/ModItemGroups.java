@@ -59,6 +59,8 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.GINO_DOOR);
                         entries.add(ModBlocks.GINO_TRAPDOOR);
+
+                        entries.add(ModBlocks.GINO_LAMP);
                     })
                     .build()
     );

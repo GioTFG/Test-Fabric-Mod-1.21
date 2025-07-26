@@ -2,6 +2,7 @@ package net.giotfg.provolamod.block;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.giotfg.provolamod.ProvolaMod;
+import net.giotfg.provolamod.block.custom.GinoLamp;
 import net.giotfg.provolamod.block.custom.MagicGinoBlock;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
@@ -111,6 +112,12 @@ public class ModBlocks {
     public static final Block GINO_TRAPDOOR = registerBlock(
             "gino_trapdoor",
             new TrapdoorBlock(BlockSetType.IRON, AbstractBlock.Settings.create().strength(2f).requiresTool().nonOpaque())
+    );
+
+    public static final Block GINO_LAMP = registerBlock(
+            "gino_lamp",
+            new GinoLamp(AbstractBlock.Settings.create()
+                    .strength(1f).requiresTool().luminance(state -> state.get(GinoLamp.TURNED_ON) ? 15 : 0))
     );
 
 
