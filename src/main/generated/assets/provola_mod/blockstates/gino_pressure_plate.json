@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "provola_mod:block/gino_pressure_plate"
+    },
+    "powered=true": {
+      "model": "provola_mod:block/gino_pressure_plate_down"
+    }
+  }
+}

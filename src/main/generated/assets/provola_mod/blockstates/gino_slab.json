@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "provola_mod:block/gino_slab"
+    },
+    "type=double": {
+      "model": "provola_mod:block/gino_block"
+    },
+    "type=top": {
+      "model": "provola_mod:block/gino_slab_top"
+    }
+  }
+}

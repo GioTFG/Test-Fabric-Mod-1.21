@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "provola_mod:gino"
+    },
+    {
+      "tag": "minecraft:stone_buttons"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "provola_mod:gino_button"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_right",
+  "textures": {
+    "bottom": "provola_mod:block/gino_door_bottom",
+    "top": "provola_mod:block/gino_door_top"
+  }
+}

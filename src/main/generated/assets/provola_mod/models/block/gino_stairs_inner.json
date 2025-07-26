@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "provola_mod:block/gino_block",
+    "side": "provola_mod:block/gino_block",
+    "top": "provola_mod:block/gino_block"
+  }
+}
