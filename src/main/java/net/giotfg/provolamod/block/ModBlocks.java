@@ -3,9 +3,7 @@ package net.giotfg.provolamod.block;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.giotfg.provolamod.ProvolaMod;
 import net.giotfg.provolamod.block.custom.MagicGinoBlock;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.ExperienceDroppingBlock;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -16,14 +14,14 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 /*
-* Qui si gestiscono tutte le registrazioni dei blocchi
-* Ad ogni blocco è associato anche un oggetto, quindi oltre alla registrazione del blocco (fatta alla creazione della sua costante chiamando registerBlock c'è anche la registrazione del BlockItem a esso associato
-* Ci sono alcuni blocchi che non devono avere un item associato, (tipo il blocco di un portale), quindi un flag alla registrazione per capire se associare o no si può inserire
-* registerModBlocks si chiama nell'onInitialize() per far partire la registrazione dei blocchi caricando questa classe
-* */
+ * Qui si gestiscono tutte le registrazioni dei blocchi
+ * A ogni blocco è associato anche un oggetto, quindi oltre alla registrazione del blocco (fatta alla creazione della sua costante chiamando registerBlock c'è anche la registrazione del BlockItem a esso associato
+ * Ci sono alcuni blocchi che non devono avere un item associato, (tipo il blocco di un portale), quindi un flag alla registrazione per capire se associare o no si può inserire
+ * registerModBlocks si chiama nell'onInitialize() per far partire la registrazione dei blocchi caricando questa classe
+ * */
 public class ModBlocks {
 
-//    Creazione di un blocco con new Block e assegnandogli una costante. Per registrarlo il nuovo blocco viene passato a registerBlock insieme al suo ID
+    //    Creazione di un blocco con new Block e assegnandogli una costante. Per registrarlo il nuovo blocco viene passato a registerBlock insieme al suo ID
 //    Aggiungere in resources.assets.provola_mod.blockstates un file id_blocco.json
 //    Aggiungere la mappatura json dei modelli alle immagini in resources.assets.provola_mod.models.block con nome_inserito_in_id_blocco.json
 //    Aggiungere la texture del blocco in textures.block e del BlockItem in textures.item
@@ -50,7 +48,7 @@ public class ModBlocks {
     public static final Block GINO_ORE = registerBlock(
             "gino_ore",
             new ExperienceDroppingBlock(
-                    UniformIntProvider.create(2,5),
+                    UniformIntProvider.create(2, 5),
                     AbstractBlock.Settings.create()
                             .strength(3f)
                             .requiresTool()
@@ -60,7 +58,7 @@ public class ModBlocks {
     public static final Block GINO_DEEPSLATE_ORE = registerBlock(
             "gino_deepslate_ore",
             new ExperienceDroppingBlock(
-                    UniformIntProvider.create(3,6),
+                    UniformIntProvider.create(3, 6),
                     AbstractBlock.Settings.create()
                             .strength(4f)
                             .requiresTool()
@@ -75,17 +73,60 @@ public class ModBlocks {
             )
     );
 
-//    Si registra un nuovo blocco, passandogli l'id e l'oggetto blocco da registrare
+    public static final Block GINO_STAIRS = registerBlock(
+            "gino_stairs",
+            new StairsBlock(ModBlocks.GINO_BLOCK.getDefaultState(), AbstractBlock.Settings.create().strength(2f).requiresTool())
+    );
+    public static final Block GINO_SLAB = registerBlock(
+            "gino_slab",
+            new SlabBlock(AbstractBlock.Settings.create().strength(2f).requiresTool())
+    );
+
+    public static final Block GINO_BUTTON = registerBlock(
+            "gino_button",
+            new ButtonBlock(BlockSetType.IRON, 2, AbstractBlock.Settings.create().strength(2f).requiresTool().noCollision())
+    );
+    public static final Block GINO_PRESSURE_PLATE = registerBlock(
+            "gino_pressure_plate",
+            new PressurePlateBlock(BlockSetType.IRON, AbstractBlock.Settings.create().strength(2f).requiresTool())
+    );
+
+    public static final Block GINO_FENCE = registerBlock(
+            "gino_fence",
+            new FenceBlock(AbstractBlock.Settings.create().strength(2f).requiresTool())
+    );
+    public static final Block GINO_FENCE_GATE = registerBlock(
+            "gino_fence_gate",
+            new FenceGateBlock(WoodType.ACACIA, AbstractBlock.Settings.create().strength(2f).requiresTool())
+    );
+    public static final Block GINO_WALL = registerBlock(
+            "gino_wall",
+            new WallBlock(AbstractBlock.Settings.create().strength(2f).requiresTool())
+    );
+
+    public static final Block GINO_DOOR = registerBlock(
+            "gino_door",
+            new DoorBlock(BlockSetType.IRON, AbstractBlock.Settings.create().strength(2f).requiresTool().nonOpaque())
+    );
+    public static final Block GINO_TRAPDOOR = registerBlock(
+            "gino_trapdoor",
+            new TrapdoorBlock(BlockSetType.IRON, AbstractBlock.Settings.create().strength(2f).requiresTool().nonOpaque())
+    );
+
+
+
+
+    //    Si registra un nuovo blocco, passandogli l'id e l'oggetto blocco da registrare
 //    Si chiama anche registerBlockItem per registrare il relativo oggetto
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(ProvolaMod.MOD_ID, name), block);
     }
 
-//    Chiamata quando si registra insieme al blocco anche il relativo oggetto
+    //    Chiamata quando si registra insieme al blocco anche il relativo oggetto
 //    Analogo a quando si registra un nuovo item normale
 //    Al posto di Item si usa BlockItem per far capire al gioco che è collegato al blocco
-    private static void registerBlockItem(String name, Block block){
+    private static void registerBlockItem(String name, Block block) {
         Registry.register(
                 Registries.ITEM,
                 Identifier.of(ProvolaMod.MOD_ID, name),
@@ -93,7 +134,7 @@ public class ModBlocks {
         );
     }
 
-//    Chiamata all'inizializzazione per far partire il codice per le costanti in alto (i blocchi da registrare)
+    //    Chiamata all'inizializzazione per far partire il codice per le costanti in alto (i blocchi da registrare)
     public static void registerModBlocks() {
         ProvolaMod.LOGGER.info("Registering mod blocks for " + ProvolaMod.MOD_ID);
 

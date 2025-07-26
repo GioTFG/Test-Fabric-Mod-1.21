@@ -1,6 +1,13 @@
-// 1.21	2025-07-25T15:44:53.8547237	Provola Mod/Block Loot Tables
-94031424a32f55a3efc47e97292bcf8f84765124 data\provola_mod\loot_table\blocks\magic_gino_block.json
+// 1.21	2025-07-26T02:17:53.6860727	Provola Mod/Block Loot Tables
+a0813a946776430070c394b70fd9caf96b68daed data\provola_mod\loot_table\blocks\gino_door.json
 1d82913926b5569501b18d27765f1a8c1bead26e data\provola_mod\loot_table\blocks\gino_block.json
 72b1dd1ec91201aca341601fd75f94e441bbbe46 data\provola_mod\loot_table\blocks\gino_deepslate_ore.json
 e8c0f1d7515b9d9cf2841a0f15117593703e55a5 data\provola_mod\loot_table\blocks\gino_ore.json
+0d117d3cad8aa841d3a4c476c1fa5434dcf9b25d data\provola_mod\loot_table\blocks\gino_slab.json
+bdf11a99d0819084e65796bf2c472fb71f817211 data\provola_mod\loot_table\blocks\gino_trapdoor.json
+ba26b18e80f1488479663a06c211d966827b65cc data\provola_mod\loot_table\blocks\gino_wall.json
+94031424a32f55a3efc47e97292bcf8f84765124 data\provola_mod\loot_table\blocks\magic_gino_block.json
+0904848226ceeae525301c0ea5f6d6c6582e4ccf data\provola_mod\loot_table\blocks\gino_fence.json
+97c8c160568ec13a685e610ba85e1e803c91f6e2 data\provola_mod\loot_table\blocks\gino_fence_gate.json
 583da8c09e068022e74569651a261ed524276470 data\provola_mod\loot_table\blocks\fire_gino_block.json
+129c11b0291b69a4f2f7ddda13532d4e0b6eb5c8 data\provola_mod\loot_table\blocks\gino_stairs.json

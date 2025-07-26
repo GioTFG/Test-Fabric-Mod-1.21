@@ -25,5 +25,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.GINO_DEEPSLATE_ORE);
+
+        getOrCreateTagBuilder(BlockTags.FENCES).add(ModBlocks.GINO_FENCE);
+
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES).add(ModBlocks.GINO_FENCE_GATE);
+
+        getOrCreateTagBuilder(BlockTags.WALLS).add(ModBlocks.GINO_WALL);
     }
 }

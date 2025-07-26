@@ -15,11 +15,22 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GINO_BLOCK);
+        BlockStateModelGenerator.BlockTexturePool ginoPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.GINO_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.FIRE_GINO_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GINO_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GINO_DEEPSLATE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MAGIC_GINO_BLOCK);
+
+        ginoPool.stairs(ModBlocks.GINO_STAIRS);
+        ginoPool.slab(ModBlocks.GINO_SLAB);
+        ginoPool.button(ModBlocks.GINO_BUTTON);
+        ginoPool.pressurePlate(ModBlocks.GINO_PRESSURE_PLATE);
+        ginoPool.fence(ModBlocks.GINO_FENCE);
+        ginoPool.fenceGate(ModBlocks.GINO_FENCE_GATE);
+        ginoPool.wall(ModBlocks.GINO_WALL);
+
+        blockStateModelGenerator.registerDoor(ModBlocks.GINO_DOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.GINO_TRAPDOOR);
     }
 
 //    Textures di tutti gli oggetti

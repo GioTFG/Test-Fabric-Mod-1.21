@@ -46,6 +46,19 @@ public class ModItemGroups {
                         entries.add(ModBlocks.GINO_DEEPSLATE_ORE);
 
                         entries.add(ModBlocks.MAGIC_GINO_BLOCK);
+
+                        entries.add(ModBlocks.GINO_STAIRS);
+                        entries.add(ModBlocks.GINO_SLAB);
+
+                        entries.add(ModBlocks.GINO_BUTTON);
+                        entries.add(ModBlocks.GINO_PRESSURE_PLATE);
+
+                        entries.add(ModBlocks.GINO_FENCE);
+                        entries.add(ModBlocks.GINO_FENCE_GATE);
+                        entries.add(ModBlocks.GINO_WALL);
+
+                        entries.add(ModBlocks.GINO_DOOR);
+                        entries.add(ModBlocks.GINO_TRAPDOOR);
                     })
                     .build()
     );

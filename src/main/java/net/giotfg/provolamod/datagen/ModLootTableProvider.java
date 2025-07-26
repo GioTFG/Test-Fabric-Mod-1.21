@@ -33,6 +33,15 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         addDrop(ModBlocks.GINO_ORE, oreDrops(ModBlocks.GINO_ORE, ModItems.GINO));
         addDrop(ModBlocks.GINO_DEEPSLATE_ORE, multipleOreDrops(ModBlocks.GINO_DEEPSLATE_ORE, ModItems.GINO, 3.0f, 6.0f));
+
+        addDrop(ModBlocks.GINO_STAIRS);
+        addDrop(ModBlocks.GINO_WALL);
+        addDrop(ModBlocks.GINO_FENCE);
+        addDrop(ModBlocks.GINO_FENCE_GATE);
+        addDrop(ModBlocks.GINO_TRAPDOOR);
+
+        addDrop(ModBlocks.GINO_SLAB, slabDrops(ModBlocks.GINO_SLAB));
+        addDrop(ModBlocks.GINO_DOOR, doorDrops(ModBlocks.GINO_DOOR));
     }
 
     /*

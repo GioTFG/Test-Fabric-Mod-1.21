@@ -10,6 +10,16 @@
   "block.provola_mod.gino_deepslate_ore": "Gino Deepslate Ore",
   "block.provola_mod.magic_gino_block": "Magic Gino Block",
 
+  "block.provola_mod.gino_stairs": "Gino Stairs",
+  "block.provola_mod.gino_slab": "Gino Slab",
+  "block.provola_mod.gino_button": "Gino Button",
+  "block.provola_mod.gino_pressure_plate": "Gino Pressure Plate",
+  "block.provola_mod.gino_fence": "Gino Fence",
+  "block.provola_mod.gino_fence_gate": "Gino Fence Gate",
+  "block.provola_mod.gino_wall": "Gino Wall",
+  "block.provola_mod.gino_door": "Gino Door",
+  "block.provola_mod.gino_trapdoor": "Gino Trapdoor",
+
   "itemgroup.provola_mod.gino_items": "Gino Items",
   "itemgroup.provola_mod.gino_blocks": "Gino Blocks",
 

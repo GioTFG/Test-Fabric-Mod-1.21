@@ -10,8 +10,10 @@ import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.util.Identifier;
 
 import java.util.List;
@@ -52,5 +54,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.GINO), conditionsFromItem(ModItems.GINO))
                 .offerTo(recipeExporter, Identifier.of(ProvolaMod.MOD_ID, "apple_gino"));
 //        Il secondo argomento in offerTo è da passare quando ci sono ricette con lo stesso output, per evitare di avere ricette con lo stesso nome
+
+        createStairsRecipe(ModBlocks.GINO_STAIRS, Ingredient.ofItems(ModBlocks.GINO_BLOCK))
+                .criterion(hasItem(ModBlocks.GINO_BLOCK), conditionsFromItem(ModBlocks.GINO_BLOCK)).offerTo(recipeExporter);
+        offerSlabRecipe(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.GINO_SLAB, ModBlocks.GINO_BLOCK);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GINO_BUTTON).input(ModItems.GINO).input(ItemTags.STONE_BUTTONS)
+                .criterion(hasItem(ModBlocks.GINO_BLOCK), conditionsFromItem(ModBlocks.GINO_BLOCK)).offerTo(recipeExporter);
+        offerPressurePlateRecipe(recipeExporter, ModBlocks.GINO_PRESSURE_PLATE, ModBlocks.GINO_BLOCK);
+//        createFenceRecipe(ModBlocks.GINO_FENCE, Ingredient.ofItems(ModBlocks.GINO_BLOCK));
+//        createFenceGateRecipe(ModBlocks.GINO_FENCE_GATE, Ingredient.ofItems(ModBlocks.GINO_BLOCK));
+//        offerWallRecipe(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.GINO_WALL, ModBlocks.GINO_BLOCK);
+
     }
 }
