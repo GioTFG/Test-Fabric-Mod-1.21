@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "turned_on=false": {
+      "model": "provola_mod:block/gino_lamp"
+    },
+    "turned_on=true": {
+      "model": "provola_mod:block/gino_lamp_on"
+    }
+  }
+}
