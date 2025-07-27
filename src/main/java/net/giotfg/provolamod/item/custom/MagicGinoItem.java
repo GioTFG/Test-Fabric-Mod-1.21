@@ -1,6 +1,7 @@
 package net.giotfg.provolamod.item.custom;
 
 import net.giotfg.provolamod.block.ModBlocks;
+import net.giotfg.provolamod.component.ModDataComponentTypes;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.gui.screen.Screen;
@@ -56,6 +57,10 @@ public class MagicGinoItem extends Item {
                         SoundEvents.BLOCK_ENDER_CHEST_OPEN,
                         SoundCategory.BLOCKS
                 );
+
+//                Al click, salvo le coordinate dell'ultimo blocco cliccato
+//                Il salvataggio lo faccio usando un data component customizzato per le coordinate
+                context.getStack().set(ModDataComponentTypes.COORDINATES, context.getBlockPos());
             }
         }
 
@@ -68,6 +73,10 @@ public class MagicGinoItem extends Item {
 
         if (Screen.hasShiftDown()) {
             tooltip.add(Text.translatable("tooltip.provola_mod.magic_gino.shift_down"));
+        }
+
+        if (stack.get(ModDataComponentTypes.COORDINATES) != null) {
+            tooltip.add(Text.literal("Last block changed at: " + stack.get(ModDataComponentTypes.COORDINATES)));
         }
 
         super.appendTooltip(stack, context, tooltip, type);
