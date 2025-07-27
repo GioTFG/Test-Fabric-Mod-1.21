@@ -4,9 +4,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.giotfg.provolamod.ProvolaMod;
 import net.giotfg.provolamod.item.custom.MagicGinoItem;
 import net.giotfg.provolamod.item.custom.ModFoodComponents;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
-import net.minecraft.item.ItemStack;
+import net.minecraft.item.*;
 import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -30,6 +28,38 @@ public class ModItems {
             super.appendTooltip(stack, context, tooltip, type);
         }
     });
+
+
+    public static final Item GINO_SWORD = registerItem("gino_sword",
+            new SwordItem(ModToolMaterials.GINO, new Item.Settings()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.GINO, 3, -2.4f))
+            )
+    );
+    public static final Item GINO_PICKAXE = registerItem(
+            "gino_pickaxe",
+            new PickaxeItem(ModToolMaterials.GINO, new Item.Settings()
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.GINO, 1, -2.8f))
+            )
+    );
+    public static final Item GINO_SHOVEL = registerItem(
+            "gino_shovel",
+            new ShovelItem(ModToolMaterials.GINO, new Item.Settings()
+                    .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.GINO, 1.5f, -3f))
+            )
+    );
+    public static final Item GINO_AXE = registerItem(
+            "gino_axe",
+            new AxeItem(ModToolMaterials.GINO, new Item.Settings()
+                    .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.GINO, 6f, -3.2f))
+            )
+    );
+    public static final Item GINO_HOE = registerItem(
+            "gino_hoe",
+            new HoeItem(ModToolMaterials.GINO, new Item.Settings()
+                    .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.GINO, 0, -3f))
+            )
+    );
+
 
 //    Metodo helepr per registrare il singolo oggetto. 'name' sarà l'id, quindi tutto minuscolo e solo underscore
     private static Item registerItem(String name, Item item) {

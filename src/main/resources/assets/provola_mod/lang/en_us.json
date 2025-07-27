@@ -4,6 +4,12 @@
   "item.provola_mod.magic_gino": "Magic Gino",
   "item.provola_mod.apple_gino": "Apple Gino",
 
+  "item.provola_mod.gino_sword": "Gino Sword",
+  "item.provola_mod.gino_pickaxe": "Gino Pickaxe",
+  "item.provola_mod.gino_shovel": "Gino Shovel",
+  "item.provola_mod.gino_axe": "Gino Axe",
+  "item.provola_mod.gino_hoe": "Gino Hoe",
+
   "block.provola_mod.gino_block": "Block of Gino",
   "block.provola_mod.fire_gino_block": "Block of Fire Gino",
   "block.provola_mod.gino_ore": "Gino Ore",

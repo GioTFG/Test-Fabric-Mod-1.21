@@ -3,6 +3,7 @@ package net.giotfg.provolamod.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.giotfg.provolamod.block.ModBlocks;
+import net.giotfg.provolamod.util.ModTags;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
 
@@ -25,11 +26,15 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.GINO_DEEPSLATE_ORE);
-
         getOrCreateTagBuilder(BlockTags.FENCES).add(ModBlocks.GINO_FENCE);
-
         getOrCreateTagBuilder(BlockTags.FENCE_GATES).add(ModBlocks.GINO_FENCE_GATE);
-
         getOrCreateTagBuilder(BlockTags.WALLS).add(ModBlocks.GINO_WALL);
+
+        getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL).add(ModBlocks.MAGIC_GINO_BLOCK);
+
+        getOrCreateTagBuilder(ModTags.Blocks.NEEDS_GINO_TOOL)
+                .add(ModBlocks.MAGIC_GINO_BLOCK)
+                .addTag(BlockTags.NEEDS_IRON_TOOL);
+//        Il tag inverso si fa manuale in resources/data/provola_mod/tags/block
     }
 }

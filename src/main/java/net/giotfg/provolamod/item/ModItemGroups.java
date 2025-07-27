@@ -30,6 +30,12 @@ public class ModItemGroups {
                         entries.add(ModItems.GINO_FOCOSO);
                         entries.add(ModItems.MAGIC_GINO);
                         entries.add(ModItems.APPLE_GINO);
+
+                        entries.add(ModItems.GINO_SWORD);
+                        entries.add(ModItems.GINO_PICKAXE);
+                        entries.add(ModItems.GINO_SHOVEL);
+                        entries.add(ModItems.GINO_AXE);
+                        entries.add(ModItems.GINO_HOE);
                     })
                     .build()
     );

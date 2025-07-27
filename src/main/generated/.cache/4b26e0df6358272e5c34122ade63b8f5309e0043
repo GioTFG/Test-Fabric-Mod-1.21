@@ -1,4 +1,4 @@
-// 1.21	2025-07-26T19:35:19.3779698	Provola Mod/Model Definitions
+// 1.21	2025-07-27T16:11:48.0439912	Provola Mod/Model Definitions
 fc714d62a028f2e860508023c960480c80c92e23 assets\provola_mod\models\item\gino_button.json
 fe973181c496f3dfa51773ce31948c172c7fe5a2 assets\provola_mod\models\block\gino_trapdoor_top.json
 135013e2696c45705ed709f262d40d7834efd051 assets\provola_mod\models\block\gino_trapdoor_open.json
@@ -17,6 +17,7 @@ d9dd0eff0947b2def0c8ba90fcb8b2f442c76c4c assets\provola_mod\models\block\gino_do
 e77e76e459bb4e1f3f7ef263042d76c3421d4b7c assets\provola_mod\models\block\gino_button_inventory.json
 70593f15fa0a495a2d82f3237e8b49e744255264 assets\provola_mod\models\block\gino_wall_post.json
 149a6ef90167e42c49e40a0249c3e27d1d599016 assets\provola_mod\models\block\fire_gino_block.json
+90968cd75c49698f905ad7cb97aaf5b6f958a699 assets\provola_mod\models\item\gino_pickaxe.json
 cb6abd48cc19257019c0f235837ea8a2113321e0 assets\provola_mod\models\block\gino_wall_inventory.json
 d0466770e27d5b1046f1fff40755f230327bd4c4 assets\provola_mod\models\block\gino_door_bottom_left_open.json
 94bcdb85f834ba3e489934f75f0e76d2cab44ef7 assets\provola_mod\models\item\gino_pressure_plate.json
@@ -48,10 +49,12 @@ c92226c2666654205d7a980697dd1075b5e1f5c1 assets\provola_mod\blockstates\gino_fen
 464d6b85cb0663f85a6312c09422c4af830d6e7d assets\provola_mod\models\item\gino_fence.json
 0e212fd9010933269acd80838276e49df19bae38 assets\provola_mod\models\item\gino_trapdoor.json
 a52534d8f01b06cf5cc0aa6660259b20b98a536c assets\provola_mod\models\block\gino_button_pressed.json
+7bec2481647a09abab3268a4627033300be335c4 assets\provola_mod\models\item\gino_shovel.json
 e36fa53e128c67ddf2b3aa7c4ca50fa65df3c0c5 assets\provola_mod\models\block\gino_stairs_inner.json
 b9149bf815ca83537e34de52727212dd9be42a04 assets\provola_mod\models\item\fire_gino_block.json
 a4645b6c8212ae0896cb5a2bef57d856ff1b3215 assets\provola_mod\models\item\gino_slab.json
 581a64661e82ef87ec9b4d0741092a086e9cea8e assets\provola_mod\models\block\gino_door_bottom_left.json
+e174bfb9e8abe9dd2c02e5a5c66d441dd42ec66b assets\provola_mod\models\item\gino_hoe.json
 3b7637e039178741555e3efa2d08bc2b6d928213 assets\provola_mod\blockstates\gino_stairs.json
 b4a43b90fae440bec1b84caded9b1d81dcebae5b assets\provola_mod\blockstates\gino_wall.json
 2b7993b15501e94e1e75e461f789400743b46d22 assets\provola_mod\models\block\gino_fence_gate_open.json
@@ -72,3 +75,5 @@ b41917d5833ef65d92542b8a60dfec2a63173db1 assets\provola_mod\blockstates\gino_pre
 664c947c31bf73fa87a0583568635cbda39053b4 assets\provola_mod\models\block\magic_gino_block.json
 081ac28d61a7a488add69e1e16c2e9f8af23c411 assets\provola_mod\models\block\gino_pressure_plate_down.json
 11806319e8107603e1e0f84f7fd064e9d873be66 assets\provola_mod\models\item\gino.json
+083c15759976e65bc23742eff8671b07a9b1f601 assets\provola_mod\models\item\gino_sword.json
+6cf16eccd5e6ddc70bb332b9ba195bff06f767fe assets\provola_mod\models\item\gino_axe.json

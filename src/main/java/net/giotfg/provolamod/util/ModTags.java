@@ -14,6 +14,9 @@ public class ModTags {
         private static TagKey<Block> createTag(String name) {
             return TagKey.of(RegistryKeys.BLOCK, Identifier.of(ProvolaMod.MOD_ID, name));
         }
+
+        public static final TagKey<Block> NEEDS_GINO_TOOL = createTag("needs_gino_tool");
+        public static final TagKey<Block> INCORRECT_FOR_GINO_TOOL = createTag("incorrect_for_gino_tool");
     }
 
     public static class Items {

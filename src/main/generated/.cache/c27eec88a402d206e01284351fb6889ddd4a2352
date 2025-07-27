@@ -1,6 +1,8 @@
-// 1.21	2025-07-26T19:35:19.3685113	Provola Mod/Tags for minecraft:block
+// 1.21	2025-07-27T16:11:48.0368124	Provola Mod/Tags for minecraft:block
 4cda203cc54d9308803b269cb9d5ffb5372a02f0 data\minecraft\tags\block\fences.json
 98d169d7a6ff968eb210f2c0562d2ced13a8877d data\minecraft\tags\block\fence_gates.json
 13e972742153713144d2e6f76dda53d99de415f9 data\minecraft\tags\block\mineable\pickaxe.json
+81dc678159e32e7e5611abad928fe910927bb3ea data\minecraft\tags\block\needs_diamond_tool.json
 1c63f12420bfc48d440ebfead7a8d0642e3f6a32 data\minecraft\tags\block\needs_iron_tool.json
 2fc3005023e13cb37067e4a56a030f0c1be60ecd data\minecraft\tags\block\walls.json
+63a88482d9cef1d2a70cbaab57e84590fb9a5cdb data\provola_mod\tags\block\needs_gino_tool.json
