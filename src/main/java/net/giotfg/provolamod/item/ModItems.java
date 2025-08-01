@@ -91,6 +91,10 @@ public class ModItems {
             )
     );
 
+    public static final Item GINO_HORSE_ARMOR = registerItem(
+            "gino_horse_armor", new AnimalArmorItem(ModArmorMaterials.GINO_ARMOR_MATERIAL, AnimalArmorItem.Type.EQUESTRIAN, false, new Item.Settings().maxCount(1))
+    );
+
 
 
     //    Metodo helepr per registrare il singolo oggetto. 'name' sarà l'id, quindi tutto minuscolo e solo underscore
@@ -102,7 +106,7 @@ public class ModItems {
     public static void registerModItems() {
         ProvolaMod.LOGGER.info("Registering mod items for " + ProvolaMod.MOD_ID);
 
-//        Per aggiungere oggetti ad un determinato gruppo di oggetti.
+//        Per aggiungere oggetti a un determinato gruppo di oggetti.
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(GINO);
             entries.add(GINO_FOCOSO);
