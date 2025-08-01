@@ -31,5 +31,12 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.SHOVELS).add(ModItems.GINO_SHOVEL);
         getOrCreateTagBuilder(ItemTags.AXES).add(ModItems.GINO_AXE);
         getOrCreateTagBuilder(ItemTags.HOES).add(ModItems.GINO_HOE);
+
+//        Necessario per avere le armature con i trim
+        getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.GINO_HELMET)
+                .add(ModItems.GINO_CHESTPLATE)
+                .add(ModItems.GINO_LEGGINGS)
+                .add(ModItems.GINO_BOOTS);
     }
 }

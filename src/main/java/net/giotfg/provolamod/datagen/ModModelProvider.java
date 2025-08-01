@@ -6,6 +6,7 @@ import net.giotfg.provolamod.block.ModBlocks;
 import net.giotfg.provolamod.block.custom.GinoLamp;
 import net.giotfg.provolamod.item.ModItems;
 import net.minecraft.data.client.*;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.util.Identifier;
 
 public class ModModelProvider extends FabricModelProvider {
@@ -53,5 +54,11 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.GINO_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.GINO_HOE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.GINO_HAMMER, Models.HANDHELD);
+
+//        Metodo diverso per le trims
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.GINO_HELMET);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.GINO_CHESTPLATE);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.GINO_LEGGINGS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.GINO_BOOTS);
     }
 }

@@ -15,14 +15,14 @@ import net.minecraft.util.Identifier;
 import java.util.List;
 
 public class ModItems {
-//    Si registrano tutti gli oggetti, salvati come costanti.
+    //    Si registrano tutti gli oggetti, salvati come costanti.
     public static final Item GINO = registerItem("gino", new Item(new Item.Settings()));
     public static final Item GINO_FOCOSO = registerItem("gino_focoso", new Item(new Item.Settings()));
     public static final Item MAGIC_GINO = registerItem("magic_gino", new MagicGinoItem(new Item.Settings().maxDamage(32)));
 
-//    Per aggiungere un oggetto cibo, bisogna passare nelle settings un food component, creato nella classe ModFoodComponents
+    //    Per aggiungere un oggetto cibo, bisogna passare nelle settings un food component, creato nella classe ModFoodComponents
     public static final Item APPLE_GINO = registerItem("apple_gino", new Item(new Item.Settings().food(ModFoodComponents.APPLE_GINO)) {
-//        Uso una classe anonima per estendere Item e aggiungere cose senza usare una classe per un oggetto custom
+        //        Uso una classe anonima per estendere Item e aggiungere cose senza usare una classe per un oggetto custom
         @Override
         public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
             tooltip.add(Text.translatable("tooltip.provola_mod.apple_gino"));
@@ -68,14 +68,35 @@ public class ModItems {
             )
     );
 
+    public static final Item GINO_HELMET = registerItem(
+            "gino_helmet", new ArmorItem(ModArmorMaterials.GINO_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(15))
+            )
+    );
+    public static final Item GINO_CHESTPLATE = registerItem(
+            "gino_chestplate", new ArmorItem(ModArmorMaterials.GINO_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(15))
+            )
+    );
+    public static final Item GINO_LEGGINGS = registerItem(
+            "gino_leggings", new ArmorItem(ModArmorMaterials.GINO_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(15))
+            )
+    );
+    public static final Item GINO_BOOTS = registerItem(
+            "gino_boots", new ArmorItem(ModArmorMaterials.GINO_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))
+            )
+    );
 
 
-//    Metodo helepr per registrare il singolo oggetto. 'name' sarà l'id, quindi tutto minuscolo e solo underscore
+
+    //    Metodo helepr per registrare il singolo oggetto. 'name' sarà l'id, quindi tutto minuscolo e solo underscore
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(ProvolaMod.MOD_ID, name), item);
     }
 
-//    Metodo invocato all'inizializzazione della mod per registrare tutti gli oggetti
+    //    Metodo invocato all'inizializzazione della mod per registrare tutti gli oggetti
     public static void registerModItems() {
         ProvolaMod.LOGGER.info("Registering mod items for " + ProvolaMod.MOD_ID);
 

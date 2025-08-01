@@ -37,6 +37,11 @@ public class ModItemGroups {
                         entries.add(ModItems.GINO_AXE);
                         entries.add(ModItems.GINO_HOE);
                         entries.add(ModItems.GINO_HAMMER);
+
+                        entries.add(ModItems.GINO_HELMET);
+                        entries.add(ModItems.GINO_CHESTPLATE);
+                        entries.add(ModItems.GINO_LEGGINGS);
+                        entries.add(ModItems.GINO_BOOTS);
                     })
                     .build()
     );

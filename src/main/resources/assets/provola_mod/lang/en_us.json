@@ -11,6 +11,11 @@
   "item.provola_mod.gino_hoe": "Gino Hoe",
   "item.provola_mod.gino_hammer": "Gino Hammer",
 
+  "item.provola_mod.gino_helmet": "Gino Helmet",
+  "item.provola_mod.gino_chestplate": "Gino Chestplate",
+  "item.provola_mod.gino_leggings": "Gino Leggings",
+  "item.provola_mod.gino_boots": "Gino Boots",
+
   "block.provola_mod.gino_block": "Block of Gino",
   "block.provola_mod.fire_gino_block": "Block of Fire Gino",
   "block.provola_mod.gino_ore": "Gino Ore",

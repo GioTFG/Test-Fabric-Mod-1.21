@@ -1,7 +1,8 @@
-// 1.21	2025-08-01T19:02:25.4739833	Provola Mod/Tags for minecraft:item
+// 1.21	2025-08-01T23:04:30.3512415	Provola Mod/Tags for minecraft:item
 2f067c1b298548822dbcd48a19367a5e4e7669fd data\minecraft\tags\item\shovels.json
 167bfdf8e5cdc7304d11d6e9b8acf4309cb3a169 data\minecraft\tags\item\swords.json
 08a2b01c8ae79b9720befa8551ef519dacc047b5 data\minecraft\tags\item\hoes.json
+486af116fdade0a72bb99817ebca8484c2c82f31 data\minecraft\tags\item\trimmable_armor.json
 44ef35c767d7f3f4e7bbc1e11a33fa7afaddcc8b data\provola_mod\tags\item\transformable_items.json
 58a945a0b1f19bf3c01b957861512e662bce0033 data\minecraft\tags\item\axes.json
 e6c67d8cf1d1ea8ca56462515ed84656031202de data\minecraft\tags\item\pickaxes.json
