@@ -2,6 +2,7 @@ package net.giotfg.provolamod.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.giotfg.provolamod.ProvolaMod;
+import net.giotfg.provolamod.item.custom.HammerItem;
 import net.giotfg.provolamod.item.custom.MagicGinoItem;
 import net.giotfg.provolamod.item.custom.ModFoodComponents;
 import net.minecraft.item.*;
@@ -59,6 +60,14 @@ public class ModItems {
                     .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.GINO, 0, -3f))
             )
     );
+
+    public static final Item GINO_HAMMER = registerItem(
+            "gino_hammer",
+            new HammerItem(ModToolMaterials.GINO, new Item.Settings()
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.GINO, 7, -3.4f))
+            )
+    );
+
 
 
 //    Metodo helepr per registrare il singolo oggetto. 'name' sarà l'id, quindi tutto minuscolo e solo underscore

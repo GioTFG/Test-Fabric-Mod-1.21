@@ -36,6 +36,7 @@ public class ModItemGroups {
                         entries.add(ModItems.GINO_SHOVEL);
                         entries.add(ModItems.GINO_AXE);
                         entries.add(ModItems.GINO_HOE);
+                        entries.add(ModItems.GINO_HAMMER);
                     })
                     .build()
     );
