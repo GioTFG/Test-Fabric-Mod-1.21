@@ -38,5 +38,11 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.GINO_CHESTPLATE)
                 .add(ModItems.GINO_LEGGINGS)
                 .add(ModItems.GINO_BOOTS);
+
+        getOrCreateTagBuilder(ItemTags.TRIM_MATERIALS)
+                .add(ModItems.GINO);
+
+        getOrCreateTagBuilder(ItemTags.TRIM_TEMPLATES)
+                .add(ModItems.GINO_SMITHING_TEMPLATE);
     }
 }

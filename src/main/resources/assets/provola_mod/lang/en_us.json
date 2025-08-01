@@ -18,6 +18,8 @@
 
   "item.provola_mod.gino_horse_armor": "Gino Horse Armor",
 
+  "item.provola_mod.gino_armor_trim_smithing_template": "Gino Smithing Template",
+
   "block.provola_mod.gino_block": "Block of Gino",
   "block.provola_mod.fire_gino_block": "Block of Fire Gino",
   "block.provola_mod.gino_ore": "Gino Ore",
@@ -43,5 +45,8 @@
 
   "tooltip.provola_mod.magic_gino.shift_down": "I transform some blocks into others ☻.",
   "tooltip.provola_mod.magic_gino": "I am §4magic§r!",
-  "tooltip.provola_mod.apple_gino": "Sometimes I'll give you extra life."
+  "tooltip.provola_mod.apple_gino": "Sometimes I'll give you extra life.",
+
+  "trim_material.provola_mod.gino": "Gino Material",
+  "trim_pattern.provola_mod.gino": "Gino Armor Pattern"
 }

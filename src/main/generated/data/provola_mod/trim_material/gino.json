@@ -1,0 +1,9 @@
+{
+  "asset_name": "gino",
+  "description": {
+    "color": "#FF7518",
+    "translate": "trim_material.provola_mod.gino"
+  },
+  "ingredient": "provola_mod:gino",
+  "item_model_index": 0.5
+}

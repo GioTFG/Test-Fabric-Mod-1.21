@@ -1,4 +1,4 @@
-// 1.21	2025-08-01T23:59:00.4703624	Provola Mod/Recipes
+// 1.21	2025-08-02T00:48:03.3516427	Provola Mod/Recipes
 8934cdbb1465477876511e64ecb39754577fce10 data\provola_mod\recipe\gino_focoso.json
 893511654b073efdad20d4ea506380687e1bbace data\provola_mod\recipe\gino_slab.json
 bd027f80116da34d51dcefe3c68f6805103bb80b data\provola_mod\recipe\gino_stairs.json
@@ -24,8 +24,10 @@ f716aaff22e589c83c416e4c59c65fba67d58e04 data\provola_mod\advancement\recipes\mi
 9ffaab142df2d4f178a0ef1688c82f32b0f99e5c data\provola_mod\recipe\gino_from_blasting_gino_deepslate_ore.json
 9ce5cced71080b09317954e532dad8945fe7f539 data\provola_mod\recipe\apple_gino.json
 fb32dfea0a5576672bfe9bd6a5c7d898c1691188 data\provola_mod\recipe\gino.json
+e5c3988aa0c2a4ed5d0efd974ad7910f770a1c92 data\provola_mod\recipe\gino_smithing_template.json
 fa7a1e98013824f58c6eb4bf01e7b3d752266bc0 data\provola_mod\advancement\recipes\misc\gino_from_smelting_gino_ore.json
 730b13f5731c370eb132de593df13f1d1c8f17a0 data\provola_mod\recipe\gino_from_blasting_gino_ore.json
 984a314db9073ad16b7c42034dfcecf01e9c99b5 data\provola_mod\advancement\recipes\building_blocks\gino_focoso.json
 de4dd8881640f68f28c57f6342e7466febc050e1 data\provola_mod\recipe\gino_block.json
+ed296443be0383375b4d18baa4abe4a547541d57 data\provola_mod\advancement\recipes\misc\gino_smithing_template.json
 c3cf3ec9b8ce3a66b72344112c72c4353241b1e3 data\provola_mod\advancement\recipes\misc\gino_focoso_from_smelting_gino.json

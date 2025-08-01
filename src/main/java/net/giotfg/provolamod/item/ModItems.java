@@ -10,6 +10,7 @@ import net.minecraft.item.*;
 import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.resource.featuretoggle.FeatureFlags;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
@@ -93,6 +94,10 @@ public class ModItems {
 
     public static final Item GINO_HORSE_ARMOR = registerItem(
             "gino_horse_armor", new AnimalArmorItem(ModArmorMaterials.GINO_ARMOR_MATERIAL, AnimalArmorItem.Type.EQUESTRIAN, false, new Item.Settings().maxCount(1))
+    );
+
+    public static final Item GINO_SMITHING_TEMPLATE = registerItem(
+            "gino_armor_trim_smithing_template", SmithingTemplateItem.of(Identifier.of(ProvolaMod.MOD_ID, "gino"), FeatureFlags.VANILLA)
     );
 
 

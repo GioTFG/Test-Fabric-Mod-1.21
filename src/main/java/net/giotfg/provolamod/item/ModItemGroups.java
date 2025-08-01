@@ -44,6 +44,8 @@ public class ModItemGroups {
                         entries.add(ModItems.GINO_BOOTS);
 
                         entries.add(ModItems.GINO_HORSE_ARMOR);
+
+                        entries.add(ModItems.GINO_SMITHING_TEMPLATE);
                     })
                     .build()
     );

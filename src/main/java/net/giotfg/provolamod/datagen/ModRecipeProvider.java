@@ -65,5 +65,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 //        createFenceGateRecipe(ModBlocks.GINO_FENCE_GATE, Ingredient.ofItems(ModBlocks.GINO_BLOCK));
 //        offerWallRecipe(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.GINO_WALL, ModBlocks.GINO_BLOCK);
 
+
+        offerSmithingTrimRecipe(recipeExporter, ModItems.GINO_SMITHING_TEMPLATE, Identifier.of(ProvolaMod.MOD_ID, "gino_smithing_template"));
     }
 }

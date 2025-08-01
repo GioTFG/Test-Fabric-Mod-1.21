@@ -62,5 +62,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor((ArmorItem) ModItems.GINO_BOOTS);
 
         itemModelGenerator.register(ModItems.GINO_HORSE_ARMOR, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.GINO_SMITHING_TEMPLATE, Models.GENERATED);
     }
 }

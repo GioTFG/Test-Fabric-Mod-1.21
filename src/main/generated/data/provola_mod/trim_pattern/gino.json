@@ -1,0 +1,8 @@
+{
+  "asset_id": "provola_mod:gino",
+  "decal": false,
+  "description": {
+    "translate": "trim_pattern.provola_mod.gino"
+  },
+  "template_item": "provola_mod:gino_armor_trim_smithing_template"
+}
