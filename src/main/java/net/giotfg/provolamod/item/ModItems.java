@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.giotfg.provolamod.ProvolaMod;
 import net.giotfg.provolamod.item.custom.HammerItem;
 import net.giotfg.provolamod.item.custom.MagicGinoItem;
+import net.giotfg.provolamod.item.custom.ModArmorItem;
 import net.giotfg.provolamod.item.custom.ModFoodComponents;
 import net.minecraft.item.*;
 import net.minecraft.item.tooltip.TooltipType;
@@ -69,7 +70,8 @@ public class ModItems {
     );
 
     public static final Item GINO_HELMET = registerItem(
-            "gino_helmet", new ArmorItem(ModArmorMaterials.GINO_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
+//            Per far partire i check di ModArmorItem, uno (qualsiasi) degli oggetti dell'armatura deve appartenere a quella classe
+            "gino_helmet", new ModArmorItem(ModArmorMaterials.GINO_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
                     .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(15))
             )
     );
