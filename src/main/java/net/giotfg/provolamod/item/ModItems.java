@@ -100,6 +100,9 @@ public class ModItems {
             "gino_armor_trim_smithing_template", SmithingTemplateItem.of(Identifier.of(ProvolaMod.MOD_ID, "gino"), FeatureFlags.VANILLA)
     );
 
+    public static final Item GINO_BOW = registerItem(
+            "gino_bow", new BowItem(new Item.Settings().maxDamage(500))
+    );
 
 
     //    Metodo helepr per registrare il singolo oggetto. 'name' sarà l'id, quindi tutto minuscolo e solo underscore

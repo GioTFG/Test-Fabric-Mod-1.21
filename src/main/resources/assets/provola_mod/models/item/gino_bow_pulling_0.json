@@ -1,0 +1,6 @@
+{
+  "parent": "provola_mod:item/gino_bow",
+  "textures": {
+    "layer0": "provola_mod:item/gino_bow_pulling_0"
+  }
+}
