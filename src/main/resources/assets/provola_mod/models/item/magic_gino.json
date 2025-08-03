@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "provola_mod:item/magic_gino"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "provola_mod:used": 1
+      },
+      "model": "provola_mod:item/magic_gino_used"
+    }
+  ]
+}

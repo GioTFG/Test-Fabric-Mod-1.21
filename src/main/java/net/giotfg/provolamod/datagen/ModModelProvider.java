@@ -46,7 +46,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.GINO, Models.GENERATED);
         itemModelGenerator.register(ModItems.GINO_FOCOSO, Models.GENERATED);
         itemModelGenerator.register(ModItems.APPLE_GINO, Models.GENERATED);
-        itemModelGenerator.register(ModItems.MAGIC_GINO, Models.GENERATED);
+//        itemModelGenerator.register(ModItems.MAGIC_GINO, Models.GENERATED); // Da fare manualmente se si usano i model predicates
 
         itemModelGenerator.register(ModItems.GINO_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.GINO_PICKAXE, Models.HANDHELD);
