@@ -25,6 +25,14 @@
   "item.provola_mod.shirk_haunted_music_disc": "Shirk - Haunted Disc",
   "item.provola_mod.shirk_haunted_music_disc.desc": "Shirk - Haunted",
 
+  "item.minecraft.potion.effect.slimey_potion": "Slimey Potion",
+  "item.minecraft.splash_potion.effect.slimey_potion": "Slimey Splash Potion",
+  "item.minecraft.lingering_potion.effect.slimey_potion": "Slimey Lingering Potion",
+
+  "item.minecraft.potion.effect.heavy_potion": "Heavy Potion",
+  "item.minecraft.splash_potion.effect.heavy_potion": "Heavy Splash Potion",
+  "item.minecraft.lingering_potion.effect.heavy_potion": "Heavy Lingering Potion",
+
   "block.provola_mod.gino_block": "Block of Gino",
   "block.provola_mod.fire_gino_block": "Block of Fire Gino",
   "block.provola_mod.gino_ore": "Gino Ore",

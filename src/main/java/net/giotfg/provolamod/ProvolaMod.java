@@ -4,18 +4,21 @@ import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
+import net.fabricmc.fabric.api.registry.FabricBrewingRecipeRegistryBuilder;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.giotfg.provolamod.block.ModBlocks;
 import net.giotfg.provolamod.component.ModDataComponentTypes;
 import net.giotfg.provolamod.effect.ModEffects;
 import net.giotfg.provolamod.item.ModItemGroups;
 import net.giotfg.provolamod.item.ModItems;
+import net.giotfg.provolamod.potion.ModPotions;
 import net.giotfg.provolamod.sound.ModSounds;
 import net.giotfg.provolamod.util.HammerUsageEvent;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.passive.SheepEntity;
 import net.minecraft.item.Items;
+import net.minecraft.potion.Potions;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import org.slf4j.Logger;
@@ -32,6 +35,7 @@ public class ProvolaMod implements ModInitializer {
 		ModBlocks.registerModBlocks();
 		ModSounds.registerSounds();
 		ModEffects.registerEffects();
+		ModPotions.registerPotions();
 
 		ModDataComponentTypes.registerDataComponentTypes();
 
@@ -52,5 +56,10 @@ public class ProvolaMod implements ModInitializer {
 
 			return ActionResult.PASS;
 		}));
+
+		FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
+			builder.registerPotionRecipe(Potions.AWKWARD, Items.HONEY_BLOCK, ModPotions.SLIMEY_POTION);
+			builder.registerPotionRecipe(Potions.AWKWARD, Items.OBSIDIAN, ModPotions.HEAVY_POTION);
+		});
 	}
 }
