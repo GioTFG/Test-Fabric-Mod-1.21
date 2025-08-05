@@ -1,0 +1,8 @@
+{
+  "comparator_output": 9,
+  "description": {
+    "translate": "item.provola_mod.shirk_haunted_music_disc.desc"
+  },
+  "length_in_seconds": 200,
+  "sound_event": "provola_mod:shirk_haunted"
+}

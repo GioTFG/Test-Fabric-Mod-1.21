@@ -6,6 +6,7 @@ import net.giotfg.provolamod.item.custom.HammerItem;
 import net.giotfg.provolamod.item.custom.MagicGinoItem;
 import net.giotfg.provolamod.item.custom.ModArmorItem;
 import net.giotfg.provolamod.item.custom.ModFoodComponents;
+import net.giotfg.provolamod.sound.ModSounds;
 import net.minecraft.item.*;
 import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.Registries;
@@ -16,6 +17,17 @@ import net.minecraft.util.Identifier;
 
 import java.util.List;
 
+/**
+ * Cose da fare quando si aggiunge un oggetto:
+ * <ol>
+ *     <li>Se l'oggetto ha funzionalità custom, creare la sua classe custom che ne definisce il comportamento (es: {@link MagicGinoItem})</li>
+ *     <li>Registrare l'oggetto in questa classe, salvandolo come costante e ottenendolo usando register (è consigliato l'uso di un metodo helper).</li>
+ *     <li>Sistemare i suoi {@link Item.Settings}</li>
+ *     <li>Aggiungerlo a eventuali categorie di blocchi: {@link ModItemGroups}</li>
+ *     <li>Impostare il modello con la datagen: {@link net.giotfg.provolamod.datagen.ModModelProvider}</li>
+ *     <li>Inserire le textures in <code>resources/assets/mod_id/textures/item</code></li>
+ *     <li>Inserire le traduzioni in <code>resources/assets/mod_id/lang</code></li>
+ * </ol>*/
 public class ModItems {
     //    Si registrano tutti gli oggetti, salvati come costanti.
     public static final Item GINO = registerItem("gino", new Item(new Item.Settings()));
@@ -103,6 +115,15 @@ public class ModItems {
     public static final Item GINO_BOW = registerItem(
             "gino_bow", new BowItem(new Item.Settings().maxDamage(500))
     );
+
+/**
+ * Per i dischi...
+ * <ul>
+ *     <li>Nelle traduzioni è necessario inserire sia un valore per <code>item.mod_id.item_id</code>,
+ *     sia per <code>item.mod_id.item_id.desc</code>, che corrisponde alla didascalia del disco.</li>
+ * </ul>*/
+    public static final Item SHIRK_HAUNTED_MUSIC_DISC = registerItem("shirk_haunted_music_disc", new Item(new Item.Settings()
+            .jukeboxPlayable(ModSounds.SHIRK_HAUNTED_KEY).maxCount(1)));
 
 
     //    Metodo helepr per registrare il singolo oggetto. 'name' sarà l'id, quindi tutto minuscolo e solo underscore

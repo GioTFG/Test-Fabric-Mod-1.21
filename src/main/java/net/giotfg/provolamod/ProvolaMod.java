@@ -9,6 +9,7 @@ import net.giotfg.provolamod.block.ModBlocks;
 import net.giotfg.provolamod.component.ModDataComponentTypes;
 import net.giotfg.provolamod.item.ModItemGroups;
 import net.giotfg.provolamod.item.ModItems;
+import net.giotfg.provolamod.sound.ModSounds;
 import net.giotfg.provolamod.util.HammerUsageEvent;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -28,6 +29,7 @@ public class ProvolaMod implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModSounds.registerSounds();
 
 		ModDataComponentTypes.registerDataComponentTypes();
 

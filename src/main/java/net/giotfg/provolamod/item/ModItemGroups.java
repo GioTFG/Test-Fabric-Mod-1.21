@@ -48,6 +48,8 @@ public class ModItemGroups {
                         entries.add(ModItems.GINO_SMITHING_TEMPLATE);
 
                         entries.add(ModItems.GINO_BOW);
+
+                        entries.add(ModItems.SHIRK_HAUNTED_MUSIC_DISC);
                     })
                     .build()
     );

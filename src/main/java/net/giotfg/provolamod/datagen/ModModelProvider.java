@@ -64,5 +64,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.GINO_HORSE_ARMOR, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.GINO_SMITHING_TEMPLATE, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.SHIRK_HAUNTED_MUSIC_DISC, Models.GENERATED);
     }
 }
