@@ -51,6 +51,14 @@
 
   "block.provola_mod.gino_lamp": "Gino Lamp",
 
+  "painting.provola_mod.familiar_tree.title": "Familiar Tree",
+  "painting.provola_mod.familiar_tree.author": "ReLogic",
+  "painting.provola_mod.familiar_sword.title": "Familiar Sword",
+  "painting.provola_mod.familiar_sword.author": "The Big N",
+  "painting.provola_mod.familiar_triangles.title": "Familiar Triangles",
+  "painting.provola_mod.familiar_triangles.author": "The Big N",
+
+
   "itemgroup.provola_mod.gino_items": "Gino Items",
   "itemgroup.provola_mod.gino_blocks": "Gino Blocks",
 
