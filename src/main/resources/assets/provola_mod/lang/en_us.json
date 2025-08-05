@@ -46,6 +46,9 @@
   "itemgroup.provola_mod.gino_items": "Gino Items",
   "itemgroup.provola_mod.gino_blocks": "Gino Blocks",
 
+  "effect.provola_mod.slimey": "Slimey",
+  "effect.provola_mod.heavy": "Heavy",
+
   "tooltip.provola_mod.magic_gino_block": "Give me §9diamonds§r and I'll give you §knetherite§r!",
 
   "tooltip.provola_mod.magic_gino.shift_down": "I transform some blocks into others ☻.",

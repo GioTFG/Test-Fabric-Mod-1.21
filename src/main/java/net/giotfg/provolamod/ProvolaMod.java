@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.giotfg.provolamod.block.ModBlocks;
 import net.giotfg.provolamod.component.ModDataComponentTypes;
+import net.giotfg.provolamod.effect.ModEffects;
 import net.giotfg.provolamod.item.ModItemGroups;
 import net.giotfg.provolamod.item.ModItems;
 import net.giotfg.provolamod.sound.ModSounds;
@@ -30,6 +31,7 @@ public class ProvolaMod implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModSounds.registerSounds();
+		ModEffects.registerEffects();
 
 		ModDataComponentTypes.registerDataComponentTypes();
 
