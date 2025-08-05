@@ -2,6 +2,7 @@ package net.giotfg.provolamod.item.custom;
 
 import net.giotfg.provolamod.block.ModBlocks;
 import net.giotfg.provolamod.component.ModDataComponentTypes;
+import net.giotfg.provolamod.sound.ModSounds;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.gui.screen.Screen;
@@ -54,7 +55,7 @@ public class MagicGinoItem extends Item {
                 world.playSound(
                         null,
                         context.getBlockPos(),
-                        SoundEvents.BLOCK_ENDER_CHEST_OPEN,
+                        ModSounds.MAGIC_GINO_USE,
                         SoundCategory.BLOCKS
                 );
 

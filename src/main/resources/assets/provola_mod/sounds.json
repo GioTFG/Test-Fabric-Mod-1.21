@@ -1,0 +1,38 @@
+{
+  "magic_gino_use": {
+    "subtitle": "sounds.provola_mod.gino_use",
+    "sounds": [
+      "provola_mod:magic_gino_use"
+    ]
+  },
+  "magic_block_break": {
+    "subtitle": "sounds.provola_mod.magic_gino_block_break",
+    "sounds": [
+      "provola_mod:magic_gino_block_break"
+    ]
+  },
+  "magic_block_step": {
+    "subtitle": "sounds.provola_mod.magic_gino_block_step",
+    "sounds": [
+      "provola_mod:magic_gino_block_step"
+    ]
+  },
+  "magic_gino_block_place": {
+    "subtitle": "sounds.provola_mod.magic_gino_block_place",
+    "sounds": [
+      "provola_mod:magic_gino_block_place"
+    ]
+  },
+  "magic_gino_block_hit": {
+    "subtitle": "sounds.provola_mod.magic_gino_block_hit",
+    "sounds": [
+      "provola_mod:magic_gino_block_hit"
+    ]
+  },
+  "magic_gino_block_fall": {
+    "subtitle": "sounds.provola_mod.magic_gino_block_fall",
+    "sounds": [
+      "provola_mod:magic_gino_block_fall"
+    ]
+  }
+}

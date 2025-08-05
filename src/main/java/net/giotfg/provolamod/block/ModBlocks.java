@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.giotfg.provolamod.ProvolaMod;
 import net.giotfg.provolamod.block.custom.GinoLamp;
 import net.giotfg.provolamod.block.custom.MagicGinoBlock;
+import net.giotfg.provolamod.sound.ModSounds;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -71,6 +72,7 @@ public class ModBlocks {
             new MagicGinoBlock(AbstractBlock.Settings.create()
                     .strength(1f)
                     .requiresTool()
+                    .sounds(ModSounds.MAGIC_GINO_BLOCK_SOUNDS)
             )
     );
 
