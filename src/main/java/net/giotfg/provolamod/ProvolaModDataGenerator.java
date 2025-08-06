@@ -3,6 +3,7 @@ package net.giotfg.provolamod;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.giotfg.provolamod.datagen.*;
+import net.giotfg.provolamod.enchantment.ModEnchantments;
 import net.giotfg.provolamod.trim.ModTrimMaterials;
 import net.giotfg.provolamod.trim.ModTrimPatterns;
 import net.minecraft.registry.RegistryBuilder;
@@ -25,5 +26,6 @@ public class ProvolaModDataGenerator implements DataGeneratorEntrypoint {
 	public void buildRegistry(RegistryBuilder registryBuilder) {
 		registryBuilder.addRegistry(RegistryKeys.TRIM_MATERIAL, ModTrimMaterials::bootstrap);
 		registryBuilder.addRegistry(RegistryKeys.TRIM_PATTERN, ModTrimPatterns::bootstrap);
+		registryBuilder.addRegistry(RegistryKeys.ENCHANTMENT, ModEnchantments::bootstrap);
 	}
 }

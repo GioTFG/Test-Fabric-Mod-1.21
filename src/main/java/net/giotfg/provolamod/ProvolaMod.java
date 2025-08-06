@@ -9,6 +9,7 @@ import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.giotfg.provolamod.block.ModBlocks;
 import net.giotfg.provolamod.component.ModDataComponentTypes;
 import net.giotfg.provolamod.effect.ModEffects;
+import net.giotfg.provolamod.enchantment.ModEnchantmentEffects;
 import net.giotfg.provolamod.item.ModItemGroups;
 import net.giotfg.provolamod.item.ModItems;
 import net.giotfg.provolamod.potion.ModPotions;
@@ -36,6 +37,7 @@ public class ProvolaMod implements ModInitializer {
 		ModSounds.registerSounds();
 		ModEffects.registerEffects();
 		ModPotions.registerPotions();
+		ModEnchantmentEffects.registerEnchantmentEffects();
 
 		ModDataComponentTypes.registerDataComponentTypes();
 
