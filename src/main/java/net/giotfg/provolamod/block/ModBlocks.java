@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.giotfg.provolamod.ProvolaMod;
 import net.giotfg.provolamod.block.custom.GinoLamp;
 import net.giotfg.provolamod.block.custom.MagicGinoBlock;
+import net.giotfg.provolamod.block.custom.StrawberryBushBlock;
 import net.giotfg.provolamod.block.custom.TomatoCropBlock;
 import net.giotfg.provolamod.sound.ModSounds;
 import net.minecraft.block.*;
@@ -129,6 +130,8 @@ public class ModBlocks {
                     .noCollision().ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY)));
 
 
+    public static final Block STRAWBERRY_BUSH = registerBlockWithoutItem("strawberry_bush",
+            new StrawberryBushBlock(AbstractBlock.Settings.copy(Blocks.SWEET_BERRY_BUSH)));
 
     //    Si registra un nuovo blocco, passandogli l'id e l'oggetto blocco da registrare
 //    Si chiama anche registerBlockItem per registrare il relativo oggetto

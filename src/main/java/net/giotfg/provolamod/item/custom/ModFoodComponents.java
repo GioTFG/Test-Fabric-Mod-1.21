@@ -10,4 +10,10 @@ public class ModFoodComponents {
             .saturationModifier(0.25f)
             .statusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST, 200), 0.25f)
             .build();
+
+    public static final FoodComponent STRAWBERRIES = new FoodComponent.Builder()
+            .nutrition(2)
+            .saturationModifier(0.15f)
+            .snack()
+            .build();
 }

@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.giotfg.provolamod.block.ModBlocks;
 import net.giotfg.provolamod.block.custom.GinoLamp;
+import net.giotfg.provolamod.block.custom.StrawberryBushBlock;
 import net.giotfg.provolamod.block.custom.TomatoCropBlock;
 import net.giotfg.provolamod.item.ModItems;
 import net.minecraft.data.client.*;
@@ -40,6 +41,9 @@ public class ModModelProvider extends FabricModelProvider {
                 .coordinate(BlockStateModelGenerator.createBooleanModelMap(GinoLamp.TURNED_ON, ginoLampOnIdentifier, ginoLampOffIdentifier)));
 
         blockStateModelGenerator.registerCrop(ModBlocks.TOMATO_CROP, TomatoCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
+
+        blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.STRAWBERRY_BUSH, BlockStateModelGenerator.TintType.NOT_TINTED,
+                StrawberryBushBlock.AGE, 0, 1, 2, 3);
     }
 
 //    Textures di tutti gli oggetti

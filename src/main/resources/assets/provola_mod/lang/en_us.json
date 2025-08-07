@@ -35,6 +35,7 @@
 
   "item.provola_mod.tomato": "Tomato",
   "item.provola_mod.tomato_seeds": "Tomato Seeds",
+  "item.provola_mod.strawberries": "Strawberries",
 
   "block.provola_mod.gino_block": "Block of Gino",
   "block.provola_mod.fire_gino_block": "Block of Fire Gino",
@@ -55,6 +56,7 @@
   "block.provola_mod.gino_lamp": "Gino Lamp",
 
   "block.provola_mod.tomato_crop": "Tomato Crop",
+  "block.provola_mod.strawberry_bush": "Strawberry Bush",
 
   "painting.provola_mod.familiar_tree.title": "Familiar Tree",
   "painting.provola_mod.familiar_tree.author": "ReLogic",

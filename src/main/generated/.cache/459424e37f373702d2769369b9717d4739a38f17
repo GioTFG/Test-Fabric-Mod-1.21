@@ -1,5 +1,6 @@
-// 1.21	2025-08-07T12:36:02.5808492	Provola Mod/Block Loot Tables
+// 1.21	2025-08-07T13:21:17.2391759	Provola Mod/Block Loot Tables
 a0813a946776430070c394b70fd9caf96b68daed data\provola_mod\loot_table\blocks\gino_door.json
+d90ab6fd722cb0d0026657f5097f0e0dec5717bc data\provola_mod\loot_table\blocks\strawberry_bush.json
 1d82913926b5569501b18d27765f1a8c1bead26e data\provola_mod\loot_table\blocks\gino_block.json
 72b1dd1ec91201aca341601fd75f94e441bbbe46 data\provola_mod\loot_table\blocks\gino_deepslate_ore.json
 e8c0f1d7515b9d9cf2841a0f15117593703e55a5 data\provola_mod\loot_table\blocks\gino_ore.json

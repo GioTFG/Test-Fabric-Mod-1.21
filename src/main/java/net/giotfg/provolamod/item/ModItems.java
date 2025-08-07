@@ -133,6 +133,8 @@ public class ModItems {
     public static final Item TOMATO = registerItem("tomato",
             new Item(new Item.Settings()));
 
+    public static final Item STRAWBERRIES = registerItem("strawberries",
+            new AliasedBlockItem(ModBlocks.STRAWBERRY_BUSH, new Item.Settings().food(ModFoodComponents.STRAWBERRIES)));
 
 
     //    Metodo helepr per registrare il singolo oggetto. 'name' sarà l'id, quindi tutto minuscolo e solo underscore

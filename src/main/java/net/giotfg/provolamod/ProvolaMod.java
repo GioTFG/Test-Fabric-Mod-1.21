@@ -67,5 +67,6 @@ public class ProvolaMod implements ModInitializer {
 
 		CompostingChanceRegistry.INSTANCE.add(ModItems.TOMATO, 0.5f);
 		CompostingChanceRegistry.INSTANCE.add(ModItems.TOMATO_SEEDS, 0.2f);
+		CompostingChanceRegistry.INSTANCE.add(ModItems.STRAWBERRIES, 0.3f);
 	}
 }
