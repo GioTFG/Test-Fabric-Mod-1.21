@@ -2,6 +2,7 @@ package net.giotfg.provolamod.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.giotfg.provolamod.ProvolaMod;
+import net.giotfg.provolamod.block.ModBlocks;
 import net.giotfg.provolamod.item.custom.HammerItem;
 import net.giotfg.provolamod.item.custom.MagicGinoItem;
 import net.giotfg.provolamod.item.custom.ModArmorItem;
@@ -124,6 +125,14 @@ public class ModItems {
  * </ul>*/
     public static final Item SHIRK_HAUNTED_MUSIC_DISC = registerItem("shirk_haunted_music_disc", new Item(new Item.Settings()
             .jukeboxPlayable(ModSounds.SHIRK_HAUNTED_KEY).maxCount(1)));
+
+
+    public static final Item TOMATO_SEEDS = registerItem("tomato_seeds",
+            new AliasedBlockItem(ModBlocks.TOMATO_CROP, new Item.Settings()));
+
+    public static final Item TOMATO = registerItem("tomato",
+            new Item(new Item.Settings()));
+
 
 
     //    Metodo helepr per registrare il singolo oggetto. 'name' sarà l'id, quindi tutto minuscolo e solo underscore

@@ -50,6 +50,9 @@ public class ModItemGroups {
                         entries.add(ModItems.GINO_BOW);
 
                         entries.add(ModItems.SHIRK_HAUNTED_MUSIC_DISC);
+
+                        entries.add(ModItems.TOMATO);
+                        entries.add(ModItems.TOMATO_SEEDS);
                     })
                     .build()
     );

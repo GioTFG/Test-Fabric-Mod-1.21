@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
+import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
 import net.fabricmc.fabric.api.registry.FabricBrewingRecipeRegistryBuilder;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.giotfg.provolamod.block.ModBlocks;
@@ -63,5 +64,8 @@ public class ProvolaMod implements ModInitializer {
 			builder.registerPotionRecipe(Potions.AWKWARD, Items.HONEY_BLOCK, ModPotions.SLIMEY_POTION);
 			builder.registerPotionRecipe(Potions.AWKWARD, Items.OBSIDIAN, ModPotions.HEAVY_POTION);
 		});
+
+		CompostingChanceRegistry.INSTANCE.add(ModItems.TOMATO, 0.5f);
+		CompostingChanceRegistry.INSTANCE.add(ModItems.TOMATO_SEEDS, 0.2f);
 	}
 }

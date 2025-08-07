@@ -33,6 +33,9 @@
   "item.minecraft.splash_potion.effect.heavy_potion": "Heavy Splash Potion",
   "item.minecraft.lingering_potion.effect.heavy_potion": "Heavy Lingering Potion",
 
+  "item.provola_mod.tomato": "Tomato",
+  "item.provola_mod.tomato_seeds": "Tomato Seeds",
+
   "block.provola_mod.gino_block": "Block of Gino",
   "block.provola_mod.fire_gino_block": "Block of Fire Gino",
   "block.provola_mod.gino_ore": "Gino Ore",
@@ -50,6 +53,8 @@
   "block.provola_mod.gino_trapdoor": "Gino Trapdoor",
 
   "block.provola_mod.gino_lamp": "Gino Lamp",
+
+  "block.provola_mod.tomato_crop": "Tomato Crop",
 
   "painting.provola_mod.familiar_tree.title": "Familiar Tree",
   "painting.provola_mod.familiar_tree.author": "ReLogic",

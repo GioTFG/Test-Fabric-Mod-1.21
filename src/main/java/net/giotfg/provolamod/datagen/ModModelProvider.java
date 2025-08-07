@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.giotfg.provolamod.block.ModBlocks;
 import net.giotfg.provolamod.block.custom.GinoLamp;
+import net.giotfg.provolamod.block.custom.TomatoCropBlock;
 import net.giotfg.provolamod.item.ModItems;
 import net.minecraft.data.client.*;
 import net.minecraft.item.ArmorItem;
@@ -38,6 +39,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.GINO_LAMP)
                 .coordinate(BlockStateModelGenerator.createBooleanModelMap(GinoLamp.TURNED_ON, ginoLampOnIdentifier, ginoLampOffIdentifier)));
 
+        blockStateModelGenerator.registerCrop(ModBlocks.TOMATO_CROP, TomatoCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
     }
 
 //    Textures di tutti gli oggetti
@@ -66,5 +68,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.GINO_SMITHING_TEMPLATE, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.SHIRK_HAUNTED_MUSIC_DISC, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.TOMATO, Models.GENERATED);
     }
 }

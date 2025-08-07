@@ -4,8 +4,10 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.giotfg.provolamod.ProvolaMod;
 import net.giotfg.provolamod.block.custom.GinoLamp;
 import net.giotfg.provolamod.block.custom.MagicGinoBlock;
+import net.giotfg.provolamod.block.custom.TomatoCropBlock;
 import net.giotfg.provolamod.sound.ModSounds;
 import net.minecraft.block.*;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -122,6 +124,9 @@ public class ModBlocks {
                     .strength(1f).requiresTool().luminance(state -> state.get(GinoLamp.TURNED_ON) ? 15 : 0))
     );
 
+    public static final Block TOMATO_CROP = registerBlockWithoutItem("tomato_crop",
+            new TomatoCropBlock(AbstractBlock.Settings.create()
+                    .noCollision().ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY)));
 
 
 
@@ -129,6 +134,10 @@ public class ModBlocks {
 //    Si chiama anche registerBlockItem per registrare il relativo oggetto
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
+        return Registry.register(Registries.BLOCK, Identifier.of(ProvolaMod.MOD_ID, name), block);
+    }
+
+    private static Block registerBlockWithoutItem(String name, Block block) {
         return Registry.register(Registries.BLOCK, Identifier.of(ProvolaMod.MOD_ID, name), block);
     }
 
